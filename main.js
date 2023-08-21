@@ -35,10 +35,29 @@ gsap.to("#pg>video",{
     ScrollTrigger:{
         trigger:`#pg>video`,
         start:`2% top`,
-        end:`bottom top`,
         scroller:`#section`
     },
     onStart:()=>{
         document.querySelector("#pg>video").play()
     }
+})
+
+gsap.to("#pg",{
+  ScrollTrigger:{
+    trigger: `#pg`,
+    start: `top top`,
+    end: `bottom top`,
+    scroller: `#section`,
+    pin: true,
+  }
+})
+
+gsap.to("#logo",{
+  ScrollTrigger:{
+    trigger: `#logo`,
+    start: `35% top`,
+    end: `bottom top`,
+    scroller: `#section`,
+  },
+  opacity:0
 })
