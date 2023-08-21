@@ -81,3 +81,9 @@ html, body {
     width: 100vw;
     background-color: #fff;
 }
+
+#pg1>video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
